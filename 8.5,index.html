@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Dashboard</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f4f9;
+    padding: 15px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    grid-template-areas:
+        "head head"
+        "side main"
+        "foot foot";
+    gap: 10px;
+    background: #eef2f8;
+    padding: 10px;
+}
+
+.header {
+    grid-area: head;
+    background: #14233f;
+    color: white;
+    padding: 15px;
+    height: 140px;
+    border-radius: 10px;
+}
+
+.sidebar {
+    grid-area: side;
+    background: #dce6fa;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.main {
+    grid-area: main;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.icon {
+    font-size: 30px;
+}
+
+.card p {
+    margin: 0;
+}
+
+.footer {
+    grid-area: foot;
+    background: #14233f;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    height: 125px;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "head"
+            "side"
+            "main"
+            "foot";
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <header class="header">
+        <h2>My Dashboard</h2>
+    </header>
+
+    <aside class="sidebar">
+        <h3>Menu</h3>
+        <ul>
+            <li>Home</li>
+            <li>Reports</li>
+            <li>Settings</li>
+        </ul>
+    </aside>
+
+    <main class="main">
+        <div class="cards">
+
+            <div class="card">
+                <span class="icon">👤</span>
+                <div><b>120</b><p>Users</p></div>
+            </div>
+
+            <div class="card">
+                <span class="icon">💰</span>
+                <div><b>Rs 45k</b><p>Sales</p></div>
+            </div>
+
+            <div class="card">
+                <span class="icon">📦</span>
+                <div><b>36</b><p>Orders</p></div>
+            </div>
+
+            <div class="card">
+                <span class="icon">⭐</span>
+                <div><b>4.8</b><p>Rating</p></div>
+            </div>
+
+            <div class="card">
+                <span class="icon">💬</span>
+                <div><b>18</b><p>Messages</p></div>
+            </div>
+
+            <div class="card">
+                <span class="icon">✅</span>
+                <div><b>92%</b><p>Done</p></div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        Made with CSS Grid
+    </footer>
+
+</div>
+
+</body>
+</html>

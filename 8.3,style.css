@@ -1,0 +1,51 @@
+.container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas:
+        "head head"
+        "side main"
+        "foot foot";
+    gap: 20px;
+      border-radius: 2px;
+    border-color: black;
+    border-width: 2px;
+    border-style: double;
+    padding: 25px;
+}
+
+.header {
+    grid-area: head;
+    background: navy;
+    border-radius: 2px;
+    border-color: black;
+    border-width: 2px;
+    border-style: double;
+}
+
+.sidebar {
+    grid-area: side;
+    background: lightblue;
+      border-radius: 2px;
+    border-color: black;
+    border-width: 2px;
+    border-style: double;
+}
+
+.main {
+    grid-area: main;
+    background: #eef2f8;
+      border-radius: 2px;
+    border-color: black;
+    border-width: 2px;
+    border-style: double;
+}
+
+.footer {
+    grid-area: foot;
+    background: navy;
+    color: white;
+      border-radius: 2px;
+    border-color: black;
+    border-width: 2px;
+    border-style: double;
+}
