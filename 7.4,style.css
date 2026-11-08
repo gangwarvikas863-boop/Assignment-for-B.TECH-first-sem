@@ -1,0 +1,39 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+      font-size: 25px;
+      background-color: #14213d;
+      color: white;
+      padding: 10px 20px;
+}
+.links{
+    display:flex;
+    gap: 20px;
+    align-items: center;
+    font-size:40px;
+
+}
+.links a{
+    text-decoration: none;
+    color: white;
+
+}
+button{
+    background-color: #ffb703;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.banner{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background-color:#315bea;
+    color:white;
+    height: 800px;
+}
